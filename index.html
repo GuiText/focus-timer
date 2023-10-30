@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="./src/main.js" type="module" defer></script>
+</head>
+<body>
+  <div id="app">
+    <section id="timer">
+      <span id="minutes">25</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+      <div id="controls-timer">
+        <button 
+          data-action-timer="startRunning"
+          id="play"
+          class="ph ph-play-circle">
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+        <button 
+          data-action-timer="pauseRunning"
+          id="stop"
+          class="ph ph-stop-circle">
+          <span class="sr-only">Parar contador</span>
+        </button>
+        <button 
+          data-action-timer="addMinutes"
+          class="ph ph-plus-circle">
+          <span class="sr-only">Acrescentar cinco minutos ao contador</span>
+        </button>
+        <button 
+          data-action-timer="decreaseMinutes"
+          class="ph ph-minus-circle">
+          <span class="sr-only">Decrementar cinco minutos ao contador</span>
+        </button>
+      </div>
+    </section>
+
+  <section id="controls">
+    <div id="controls-sounds">
+      <button 
+        data-action-sound="forest"
+        class="ph ph-tree">
+        <span class="sr-only">Iniciar som de floresta</span>
+      </button>
+      <button 
+        data-action-sound="rain"
+        class="ph ph-cloud-snow">
+        <span class="sr-only">inciar som de chuva</span>
+      </button>
+      <button 
+        data-action-sound="coffeeShop"
+        class="ph ph-storefront ">
+        <span class="sr-only">Iniciar som de cafeteria</span>
+      </button>
+      <button 
+        data-action-sound="firePlace"
+        class="ph ph-campfire">
+        <span class="sr-only">Iniciar som de lareira</span>
+      </button>
+    </div>
+  </section>
+  </div>
+</body>
+</html>
